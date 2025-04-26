@@ -6,7 +6,6 @@
   --text-dark: black; 
 }
   
-
 body {
     background-color: gray;
 }
@@ -113,6 +112,8 @@ article img {
 
 .article-body {
   padding: 20px;
+  width: 100%;
+  max-width: 600px; 
 }
 
 article a {
@@ -152,6 +153,10 @@ article:has(:hover, :focus) {
   padding-inline: 24px;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 24px;
+}
+
+.article-body p {
+  text-align: left;
 }
 
 @media screen and (max-width: 960px) {
