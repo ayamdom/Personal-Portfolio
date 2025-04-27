@@ -148,7 +148,7 @@ article:has(:hover, :focus) {
 .articles {
   display: grid;
   padding-top: 120px;
-  max-width: 1400px;
+  max-width: 1750px;
   margin-inline: auto;
   padding-inline: 24px;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -168,11 +168,11 @@ article:has(:hover, :focus) {
   }
 }
 
-@container card (min-width: 380px) {
+@container card (min-width: 320px) {
   .article-wrapper {
     display: grid;
-    grid-template-columns: 100px 1fr;
-    gap: 16px;
+    grid-template-columns: 210px 1fr;
+    gap: 15px;
   }
   .article-body {
     padding-left: 0;
@@ -184,7 +184,7 @@ article:has(:hover, :focus) {
   }
   figure img {
     height: 100%;
-    aspect-ratio: 1;
+    aspect-ratio: 5;
     object-fit: cover;
   }
 }
