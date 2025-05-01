@@ -226,5 +226,4 @@ article:has(:hover, :focus) {
       display: block;
       width: 100%;
     }
-    
 }
