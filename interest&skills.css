@@ -50,7 +50,7 @@ nav input {
   display: none;
 }
 nav .checkbox i {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--primary-color);
   cursor: pointer;
 }
@@ -209,7 +209,7 @@ article:has(:hover, :focus) {
       width: 100%;
       height: calc(100vh - 85px);
       left: -100%;
-      top: 85px;
+      top: 75px;
       background-color: var(--extra-light);
       flex-direction: column;
       justify-content: center;
@@ -221,7 +221,7 @@ article:has(:hover, :focus) {
     }
   
     ul li a {
-      font-size: 1.25rem;
+      font-size: 1.15rem;
       text-align: center;
       display: block;
       width: 100%;
