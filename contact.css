@@ -69,7 +69,7 @@ ul li a {
   border: 2px solid transparent;
   font-weight: 600;
   color: var(--text-dark);
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .section {
