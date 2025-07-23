@@ -169,6 +169,13 @@ article:has(:hover, :focus) {
   }
 }
 
+
+figure {
+  width: 150%;
+  height: 100%;
+  overflow: hidden;
+}
+
 @container card (min-width: 320px) {
   .article-wrapper {
     display: grid;
@@ -230,4 +237,11 @@ article:has(:hover, :focus) {
     display: block;
     width: 100%;
   }
+}
+
+
+figure {
+  width: 150%;
+  height: 100%;
+  overflow: hidden;
 }
