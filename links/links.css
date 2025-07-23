@@ -2,12 +2,12 @@
 
 :root {
   --max-width: 1200px;
-  --extra-light: gray; 
-  --text-dark: black; 
+  --extra-light: gray;
+  --text-dark: black;
 }
-  
+
 body {
-    background-color: gray;
+  background-color: gray;
 }
 
 * {
@@ -49,6 +49,7 @@ nav .checkbox {
 nav input {
   display: none;
 }
+
 nav .checkbox i {
   font-size: 1.5rem;
   color: var(--primary-color);
@@ -60,7 +61,7 @@ ul {
   text-align: left;
   gap: 1rem;
   list-style: none;
-  transition: left 0.3s;
+  transition: left 0.5s;
 }
 
 ul li a {
@@ -75,7 +76,7 @@ ul li a {
 .article-body {
   padding: 20px;
   width: 100%;
-  max-width: 600px; 
+  max-width: 600px;
 }
 
 .article-body p {
@@ -87,15 +88,15 @@ ul li a {
   align-items: flex-start;
   gap: 20px;
   max-width: 1000px;
-  margin: 100px auto 0; 
+  margin: 100px auto 0;
   padding: 5%;
 }
 
 figure img {
-  max-width: 1000px; 
+  max-width: 1000px;
   width: 100%;
   height: auto;
-  border-radius: 10px; 
+  border-radius: 10px;
 }
 
 @media (width < 750px) {
@@ -106,7 +107,7 @@ figure img {
   ul {
     position: absolute;
     width: 100%;
-    height: calc(100vh - 85px);
+    height: calc(110vh - 85px);
     left: -100%;
     top: 75px;
     background-color: var(--extra-light);
@@ -115,7 +116,7 @@ figure img {
     gap: 3rem;
   }
 
-  nav #check:checked ~ ul {
+  nav #check:checked~ul {
     left: 0;
   }
 
