@@ -2,12 +2,9 @@
 
 :root {
   --max-width: 1200px;
-  --extra-light: gray;
-  --text-dark: black;
-}
-
-body {
-  background-color: gray;
+  --extra-light: #f2f2f2;
+  --text-dark: #222;
+  --primary-color: royalblue;
 }
 
 * {
@@ -22,6 +19,20 @@ a {
 
 body {
   font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #dcdcdc, #f8f9fa);
+  overflow-x: hidden;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 nav {
@@ -30,6 +41,7 @@ nav {
   top: 0;
   left: 0;
   background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   z-index: 99;
 }
 
@@ -40,6 +52,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  animation: fadeInUp 0.8s ease-in-out;
 }
 
 nav .checkbox {
@@ -66,11 +79,15 @@ ul {
 
 ul li a {
   padding: 0.5rem 1rem;
-  border: 2px solid transparent;
-  text-decoration: none;
+  border-radius: 8px;
   font-weight: 600;
   color: var(--text-dark);
-  transition: 0.5s;
+  transition: 0.3s ease-in-out;
+}
+
+ul li a:hover {
+  background-color: var(--primary-color);
+  color: white;
 }
 
 .article-body {
@@ -90,6 +107,7 @@ ul li a {
   max-width: 1000px;
   margin: 100px auto 0;
   padding: 5%;
+  animation: fadeInUp 1s ease-in-out;
 }
 
 figure img {
@@ -97,6 +115,12 @@ figure img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+figure img:hover {
+  transform: scale(0.9);
 }
 
 @media (width < 750px) {
@@ -110,7 +134,7 @@ figure img {
     height: calc(110vh - 85px);
     left: -100%;
     top: 75px;
-    background-color: var(--extra-light);
+    background: linear-gradient(135deg, #f0f0f0, #ffffff);
     flex-direction: column;
     justify-content: center;
     gap: 3rem;
